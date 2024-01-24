@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 300px; */
+    margin: 20px 0px;
+    padding: 15px 0px;
+    width: 220px;
+    border: .5px solid #0000008d;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+#card:hover{
+    transform: scale(1.06);
+}
+#card p {
+    text-align: center;
+    margin: 15px 20px;
+    opacity: .6;
+    font-weight: 700;
+}
+
+#card h2 {
+    font: 25px;
+    margin: 10px;
+}
+
+#card #img {
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50%;
+}
+#card #img img {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+}
+#card button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: .5px solid rgb(0, 0, 0);
+    /* background-color: rgb(77, 136, 255); */
+    outline: none;
+    color: white;
+}
+#card h3#Stranger{
+    color: red;
+}
+#card h3#Friend{
+    color: green;
+}
+#card button.blue {
+    background-color: blue;
+}
+#card button.red {
+    background-color: red;
+}
